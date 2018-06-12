@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="a">
     <TopSwiper :tops='tops'></TopSwiper>
     <Card :key='product.id' v-for='product in products' :product='product'></Card>
     <p class='text-footer' v-if='!more'>

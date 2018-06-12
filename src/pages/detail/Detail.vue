@@ -1,22 +1,13 @@
 <template>
   <div>
-    <p>产品ID：{{productid}}</p>
+    <Companyinfo></Companyinfo>
   </div>
 </template>
 <script>
+  import Companyinfo from '@/components/Companyinfo'
   export default {
-    data () {
-      return {
-        productid: ''
-      }
-    },
-    methods: {
-      test () {
-        console.log('aaa')
-      }
-    },
-    mounted () {
-      this.productid = this.$root.$mp.query.id
+    components: {
+      Companyinfo
     }
   }
 </script>

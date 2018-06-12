@@ -54,6 +54,7 @@
     margin-top:5px;
     margin-bottom:5px;
     font-size:14px;
+
     .thumb{
       width:150px;
       height:122px;
