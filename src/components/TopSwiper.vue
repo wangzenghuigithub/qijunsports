@@ -14,7 +14,7 @@
             @click='productDetail(top)'
             class='slide-image'
             mode='scaleToFill'
-            :src="top.pic"
+            :src="top.pic_top"
             >
         </swiper-item>
       </div>

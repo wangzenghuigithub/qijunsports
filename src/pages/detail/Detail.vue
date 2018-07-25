@@ -25,7 +25,7 @@ export default {
         console.log(this.id + 'aaa')
         const detail = await get('/weapp/detail', {id: this.id})
         console.log(detail.list[0].detail)
-        this.detail = detail.list[0].detail
+        this.detail = detail.list[0].content
       }
     },
     mounted () {

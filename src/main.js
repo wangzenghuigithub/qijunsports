@@ -20,30 +20,30 @@ export default {
       navigationBarTextStyle: 'black',
       enablePullDownRefresh: true
       // onReachBottomDistance: 20
-    },
-    'tabBar': {
-      selectedColor: '#1296db',
-      list: [
-        {
-          pagePath: 'pages/home/main',
-          text: '主页',
-          iconPath: 'static/img/home.png',
-          selectedIconPath: 'static/img/home-active.png'
-        },
-        {
-          pagePath: 'pages/me/main',
-          text: '预约',
-          iconPath: 'static/img/detail.png',
-          selectedIconPath: 'static/img/detail-active.png'
-        },
-        {
-          pagePath: 'pages/me/main',
-          text: '个人中心',
-          iconPath: 'static/img/me.png',
-          selectedIconPath: 'static/img/me-active.png'
-        }
-
-      ]
     }
+    // 'tabBar': {
+    //   selectedColor: '#1296db',
+    //   list: [
+    //     {
+    //       pagePath: 'pages/home/main',
+    //       text: '主页',
+    //       iconPath: 'static/img/home.png',
+    //       selectedIconPath: 'static/img/home-active.png'
+    //     },
+    //     {
+    //       pagePath: 'pages/me/main',
+    //       text: '预约',
+    //       iconPath: 'static/img/detail.png',
+    //       selectedIconPath: 'static/img/detail-active.png'
+    //     },
+    //     {
+    //       pagePath: 'pages/me/main',
+    //       text: '个人中心',
+    //       iconPath: 'static/img/me.png',
+    //       selectedIconPath: 'static/img/me-active.png'
+    //     }
+    //
+    //   ]
+    // }
   }
 }

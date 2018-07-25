@@ -2,7 +2,7 @@
   <a :href="detailUrl">
     <div class="product-card">
       <div class="thumb" @click.stop="preview">
-        <img :src="product.pic"
+        <img :src="product.thumbnail"
              class="img"
              mode="scaleToFill"
         />
@@ -10,39 +10,49 @@
       <div class="detail">
         <div class="row text-primary">
           <div class="name">
-            {{product.name}}
+            {{product.title}}
           </div>
         </div>
         <div class="row">
           <div class="text-people text-primary">
-            游戏人数:{{product.people}}人
+            游戏人数:{{people}}人
           </div>
         </div>
         <div class="row">
           <div class="text-introduction">
-            {{product.introduction}}
+            {{product.describe}}
           </div>
         </div>
       </div>
     </div>
   </a>
-
 </template>
 <script>
   export default {
+    data () {
+      return {
+        people: ''
+      }
+    },
     props: ['product'],
     computed: {
       detailUrl () {
-        console.log(this.product.id)
         return '/pages/detail/main?id=' + this.product.id
       }
     },
     methods: {
       preview () {
         wx.previewImage({
-          current: this.product.pic,
-          urls: [this.product.pic]
+          current: this.product.thumbnail,
+          urls: [this.product.thumbnail]
         })
+      }
+    },
+    mounted () {
+      if (this.product.min_people_number === this.product.max_people_number) {
+        this.people = this.product.min_people_number
+      } else {
+        this.people = this.product.min_people_number + '~' + this.product.max_people_number
       }
     }
   }

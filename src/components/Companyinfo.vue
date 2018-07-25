@@ -49,10 +49,12 @@
     box-shadow: 0 2px 3px 2px rgba(0,0,0,0.03);
     margin-bottom: 30px;
     padding-bottom: 30px;
+    margin-top: 10px;
   }
 .title{
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   border-bottom: 1px solid #919191;
   font-size: 16px;
 }

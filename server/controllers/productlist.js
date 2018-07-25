@@ -4,9 +4,9 @@ const { mysql } = require('../qcloud')
 module.exports = async (ctx) => {
     const {page} = ctx.request.query
     const size = 5
-    const mysqlSelect = mysql('products')
-        .select('products.*')
-        .orderBy('products.id', 'asc')
+    const mysqlSelect = mysql('activity_info')
+        .select('activity_info.*')
+        .orderBy('activity_info.order', 'asc')
     let products
     // if (openid) {
     // // 根据opid过滤
